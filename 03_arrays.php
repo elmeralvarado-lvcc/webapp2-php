@@ -36,9 +36,9 @@ echo '<br>';
 */
 
 $colors = [
-    1 => 'red',
-    2 => 'green',
-    3 => 'blue',
+  1 => 'red',
+  2 => 'green',
+  3 => 'blue',
 ];
 
 echo $colors[1];
@@ -46,9 +46,9 @@ echo '<br>';
 
 // Strings as keys
 $hex = [
-    'red' => '#f00',
-    'green' => '#0f0',
-    'blue' => '#00f',
+  'red' => '#f00',
+  'green' => '#0f0',
+  'blue' => '#00f',
 ];
 
 echo $hex['red'];
@@ -65,24 +65,24 @@ echo '<br>';
 
 // Single person
 $person1 = [
-    'first_name' => 'Elmer',
-    'last_name' => 'Alvarado',
-    'email' => 'elmeralvarado@laverdad.edu.ph',
+  'first_name' => 'Elmer',
+  'last_name' => 'Alvarado',
+  'email' => 'elmeralvarado@laverdad.edu.ph',
 ];
 
 // Array of people
 $people = [
-    $person1, //   [...$person1]
-    [
-        'first_name' => 'John',
-        'last_name' => 'Doe',
-        'email' => 'john@gmail.com',
-    ],
-    [
-        'first_name' => 'Jane',
-        'last_name' => 'Doe',
-        'email' => 'jane@gmail.com',
-    ],
+  $person1, //   [...$person1]
+  [
+    'first_name' => 'John',
+    'last_name' => 'Doe',
+    'email' => 'john@gmail.com',
+  ],
+  [
+    'first_name' => 'Jane',
+    'last_name' => 'Doe',
+    'email' => 'jane@gmail.com',
+  ],
 ];
 
 echo '<pre>';
@@ -102,7 +102,7 @@ var_dump(json_encode($people));
 echo '</pre>';
 
 // Decode from JSON
-$jsonobj = '{"first_name":"Brad","last_name": "Traversy","email":"brad@gmail.com"}';
+$jsonobj = '{"first_name":"Elmer","last_name": "Alvarado","email":"elmeralvarado@laverdad.edu.ph"}';
 echo '<pre>';
 var_dump(json_decode($jsonobj));
 echo '</pre>';
